@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "fextn",
         "Gspo",
         "inmem",
         "jsonld",
@@ -8,6 +9,8 @@
         "NQUADS",
         "NTRIPLES",
         "Ogps",
-        "RDFXML"
+        "RDFA",
+        "RDFXML",
+        "thiserror"
     ]
 }

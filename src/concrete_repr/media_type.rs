@@ -21,6 +21,10 @@ pub static TEXT_OWL_MANCHESTER: Lazy<Mime> = Lazy::new(|| {
     "text/owl-manchester".parse().unwrap()
 });
 
+pub static APPLICATION_OWL_XML: Lazy<Mime> = Lazy::new(|| {
+    "application/owl+xml".parse().unwrap()
+});
+
 pub static TEXT_N3: Lazy<Mime> = Lazy::new(|| {
     "text/n3".parse().unwrap()
 });
@@ -31,4 +35,12 @@ pub static APPLICATION_TRIG: Lazy<Mime> = Lazy::new(|| {
 
 pub static APPLICATION_JSON_LD: Lazy<Mime> = Lazy::new(|| {
     "application/ld+json".parse().unwrap()
+});
+
+pub static APPLICATION_XHTML_XML: Lazy<Mime> = Lazy::new(|| {
+    "application/xhtml+xml".parse().unwrap()
+});
+
+pub static TEXT_HTML: Lazy<Mime> = Lazy::new(|| {
+    mime::TEXT_HTML
 });
