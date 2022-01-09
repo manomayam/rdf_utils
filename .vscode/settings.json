@@ -2,8 +2,12 @@
     "cSpell.words": [
         "Gspo",
         "inmem",
+        "jsonld",
         "Mownarc",
         "mownstr",
-        "Ogps"
+        "NQUADS",
+        "NTRIPLES",
+        "Ogps",
+        "RDFXML"
     ]
 }
