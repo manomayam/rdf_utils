@@ -1,4 +1,4 @@
-//! This module defines struct for rdf concrete syntax. It also exports few concrete syntax types
+//! This module defines struct for rdf concrete syntax. It also exports few concrete syntax types. syntaxes are open set, hence Syntax is not enum
 use std::fmt::Display;
 
 use sophia_api::term::SimpleIri;

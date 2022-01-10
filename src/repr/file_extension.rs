@@ -1,5 +1,7 @@
 use std::{ffi::OsStr, ops::Deref, path::Path, borrow::Cow, fmt::Display};
 
+use thiserror::Error;
+
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 /// A struct that denotes a file extension
 pub struct FileExtension(pub Cow<'static, str>);

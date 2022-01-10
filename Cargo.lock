@@ -12,6 +12,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "anyhow"
+version = "1.0.52"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "84450d0b4a8bd1ba4144ce8ce718fbc5d071358b1e5384bace6536b3d1f2d5b3"
+
+[[package]]
 name = "bytes"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -171,6 +177,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "quick-xml"
+version = "0.22.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8533f14c8382aaad0d592c812ac3b826162128b65662331e1127b45c3d18536b"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -223,11 +238,15 @@ dependencies = [
 name = "rdf_utils"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "http",
  "mime",
  "once_cell",
+ "oxiri",
  "phf",
+ "rio_api",
  "rio_turtle",
+ "rio_xml",
  "sophia_api",
  "sophia_inmem",
  "sophia_rio",
@@ -273,6 +292,18 @@ checksum = "896e6e63b744436510f2cd4bdc1d236e3f2a5d0cbbe0468f75cdce45c60172e7"
 dependencies = [
  "oxilangtag",
  "oxiri",
+ "rio_api",
+]
+
+[[package]]
+name = "rio_xml"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2646b30f115ba1e85e5941a6f6a651b245b7b89033a2d92ae0e5646804b388be"
+dependencies = [
+ "oxilangtag",
+ "oxiri",
+ "quick-xml",
  "rio_api",
 ]
 

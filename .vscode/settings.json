@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "bufread",
         "fextn",
         "Gspo",
         "inmem",
@@ -9,8 +10,10 @@
         "NQUADS",
         "NTRIPLES",
         "Ogps",
+        "oxiri",
         "RDFA",
         "RDFXML",
+        "repr",
         "thiserror"
     ]
 }

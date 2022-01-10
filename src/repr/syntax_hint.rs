@@ -32,8 +32,8 @@ impl Display for SyntaxHint<'_> {
 #[error("Unknown SyntaxHint {0}")]
 pub struct UnknownSyntaxHintError<'a>(SyntaxHint<'a>);
 
-impl<'a, T: AsRef<SyntaxHint<'a>>> From<&'_ T> for UnknownSyntaxHintError<'a> {
-    fn from(hint: &T) -> Self {
+impl<'a> UnknownSyntaxHintError<'a> {
+    pub fn new<T: AsRef<SyntaxHint<'a>>>(hint: &T) -> Self {
         Self(hint.as_ref().clone())
     }
 }
