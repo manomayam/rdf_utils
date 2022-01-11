@@ -5,7 +5,7 @@ use sophia_turtle::parser::{nq, trig};
 
 use crate::repr::syntax::{self, Syntax};
 
-use self::source::SomeHowQuadSource;
+use self::source::SomeQuadSource;
 
 pub mod source;
 
@@ -19,9 +19,9 @@ enum InnerQuadParser {
 }
 
 /// A parser that can parse quads from documents in some supported concrete syntax. Currently it supports NQuads and TriG syntaxes.
-pub struct SomeHowQuadParser(InnerQuadParser);
+pub struct SomeSyntaxQuadParser(InnerQuadParser);
 
-impl SomeHowQuadParser {
+impl SomeSyntaxQuadParser {
     /// Try to create an instance of the parser for given syntax. returns [`UnSupportedQuadSyntaxError`](UnSupportedQuadSyntaxError) if syntax is not a supported syntax for quads parsing
     pub fn try_new(
         syntax_: Syntax,
@@ -39,8 +39,8 @@ impl SomeHowQuadParser {
     }
 }
 
-impl<R: BufRead> QuadParser<R> for SomeHowQuadParser {
-    type Source = SomeHowQuadSource<R>;
+impl<R: BufRead> QuadParser<R> for SomeSyntaxQuadParser {
+    type Source = SomeQuadSource<R>;
 
     fn parse(&self, data: R) -> Self::Source {
         match &self.0 {

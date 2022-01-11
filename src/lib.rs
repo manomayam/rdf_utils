@@ -1,3 +1,3 @@
 pub mod models;
-pub mod somehow_parser;
+pub mod some_syntax_parser;
 pub mod repr;
