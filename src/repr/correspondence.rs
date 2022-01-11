@@ -81,6 +81,8 @@ pub static EXTENSION_TO_SYNTAX_CORRESPONDENCE: Lazy<HashMap<FileExtension, Corre
 
             fextn::OWL, syntax::OWL2_XML, true;
 
+            fextn::OWX, syntax::OWL2_XML, true;
+
             fextn::RDF, syntax::RDF_XML, true;
 
             fextn::RDFXML, syntax::RDF_XML, true;
@@ -159,3 +161,9 @@ pub static MEDIA_TYPE_TO_SYNTAX_CORRESPONDENCE: Lazy<
     );
     map
 });
+
+
+#[cfg(test)]
+mod tests {
+    // see tests for syntax_hint module. They cover these mappings too.
+}

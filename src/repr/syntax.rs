@@ -85,9 +85,8 @@ pub const JSON_LD: Syntax = Syntax(SimpleIri::new_unchecked(
     Some("json-ld/"),
 ));
 
-
 /// XHTML+RDFa 1.1 - Third Edition: Support for RDFa via XHTML Modularization
-/// 
+///
 /// Spec: [https://www.w3.org/TR/xhtml-rdfa/](https://www.w3.org/TR/xhtml-rdfa/)
 pub const XHTML_RDFA: Syntax = Syntax(SimpleIri::new_unchecked(
     "https://www.w3.org/TR/",
@@ -101,3 +100,9 @@ pub const HTML_RDFA: Syntax = Syntax(SimpleIri::new_unchecked(
     "https://www.w3.org/TR/",
     Some("html-rdfa/"),
 ));
+
+
+#[cfg(test)]
+pub mod tests {
+    //! Nothing to test here
+}

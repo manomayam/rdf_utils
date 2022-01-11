@@ -1,8 +1,8 @@
-//! These parsers modules parses quads/triples from some known rdf concrete syntax. This is useful when one want to abstract over quad/triple source without concerning about underlying parsers.
-//! 
-//! These source abstractions are based on closed-enums instead of open-dynamic-trait-objects, as [`QuadSource`](sophia_api::quad::stream::QuadSource) and [`TripleSource`](sophia_api::triple::stream::TripleSource) are not allowed for trait objects
-
 pub mod errors;
+
+/// This module provides [`SomeSyntaxQuadParser`](quads::SomeSyntaxQuadParser) which can be instantiated for runtime chosen concrete-syntax.
 pub mod quads;
+/// This module provides abstraction, that can be used either as QuadParser or TripleParser, for runtime chosen concrete syntax
 pub mod rdf;
+/// This module provides [`SomeSyntaxTripleParser`](triples::SomeSyntaxTripleParser) which can be instantiated for runtime chosen concrete-syntax.
 pub mod triples;

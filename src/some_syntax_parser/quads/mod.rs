@@ -18,7 +18,7 @@ enum InnerQuadParser {
     TriGParser(trig::TriGParser),
 }
 
-/// A parser that can parse quads from documents in some supported concrete syntax. Currently it supports NQuads and TriG syntaxes.
+/// A parser that can parse quads from documents in concrete syntax, with which this parser is instantiated at runtime. Currently it supports NQuads and TriG syntaxes.
 pub struct SomeSyntaxQuadParser(InnerQuadParser);
 
 impl SomeSyntaxQuadParser {

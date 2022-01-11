@@ -2,12 +2,11 @@ use rio_turtle::TurtleError;
 use rio_xml::RdfXmlError;
 use sophia_api::triple::stream::{StreamError, StreamResult};
 
-
 #[derive(Debug, thiserror::Error)]
 #[error(transparent)]
 enum InnerSyntaxError {
     TurtleError(#[from] TurtleError),
-    RdfXmlError(#[from] RdfXmlError)
+    RdfXmlError(#[from] RdfXmlError),
 }
 
 #[derive(Debug, thiserror::Error)]
@@ -27,7 +26,6 @@ impl From<RdfXmlError> for SomeSyntaxError {
     }
 }
 
-
 pub type SomeHowStreamError<SinkErr> = StreamError<SomeSyntaxError, SinkErr>;
 
 /// This function adapts StreamError by marshalling it's SourceError variant from known types to `SomeHowSyntaxError` type
@@ -45,7 +43,6 @@ where
 }
 
 pub type SomeHowStreamResult<T, SinkErr> = StreamResult<T, SomeSyntaxError, SinkErr>;
-
 
 pub fn adapt_stream_result<T, SourceErr, SinkErr>(
     r: StreamResult<T, SourceErr, SinkErr>,
