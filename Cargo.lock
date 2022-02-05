@@ -136,7 +136,7 @@ dependencies = [
 
 [[package]]
 name = "rdf_utils"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "claim",
  "env_logger",
@@ -171,9 +171,9 @@ checksum = "bd69ab1e90258b7769f0b5c46bfd802b8206d0707ced4ca4b9d5681b744de1be"
 
 [[package]]
 name = "sophia_api"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e45365d668e8b7c4841094db3713a747a4f40f8db40f8b84b13303d2890ad9fd"
+checksum = "aad03aad8253bd0f7c5423da4a1aaf4b18e5856b40e8841063ba5226cebc5efb"
 dependencies = [
  "lazy_static",
  "mownstr",
@@ -185,9 +185,9 @@ dependencies = [
 
 [[package]]
 name = "sophia_indexed"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d03f62a1178270d45ddf9dd79084c6a7da80e009c4987c6b8bab8dc5b637805f"
+checksum = "f8385acd3ff5e36a22fe4f6d308a10a66b87bbb437bcab096c1d88d522b05ece"
 dependencies = [
  "sophia_api",
  "sophia_term",
@@ -195,9 +195,9 @@ dependencies = [
 
 [[package]]
 name = "sophia_inmem"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e9c98fd51559b44eacf28ca2477627d01fe200bef4086891412457f9cb795ad8"
+checksum = "28f09086332b823c4d8fa2365987cf881f1c6a9b139991db78c09729a5a3442c"
 dependencies = [
  "sophia_api",
  "sophia_indexed",
@@ -206,9 +206,9 @@ dependencies = [
 
 [[package]]
 name = "sophia_iri"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "85b1a4e06de36c45e0b55ed1b061acc65c1d59eeeaf73baa1c244917f4cca942"
+checksum = "ecf2b1953a03e53c8cbfb029646be5b75c7e3a83cde8ef16ffe185c471093437"
 dependencies = [
  "lazy_static",
  "mownstr",
@@ -218,9 +218,9 @@ dependencies = [
 
 [[package]]
 name = "sophia_term"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a5d3dd7e63eb8c6f04fe975df2b4015e0d9c56670ef2c41c6bc808ae55c27d41"
+checksum = "9d21426110f6c45ba6f6a0f5354b4d201cc42a00d2550f7c7ca26e6d6ba89490"
 dependencies = [
  "lazy_static",
  "mownstr",

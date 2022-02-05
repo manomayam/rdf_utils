@@ -1,14 +1,14 @@
 [package]
 name = "rdf_utils"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 description = "This crate provides few utilities to handle rdf data"
 license = "MIT OR Apache-2.0"
 
 
 [dependencies]
-sophia_term = "0.7.1"
-sophia_inmem = "0.7.1"
+sophia_term = "0.7.2"
+sophia_inmem = "0.7.2"
 
 [dev-dependencies]
 claim = "0.5.0"
